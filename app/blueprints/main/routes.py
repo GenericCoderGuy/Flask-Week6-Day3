@@ -18,10 +18,10 @@ def home():
 def about():
     return render_template('about.html')
 
-@app.route('/contact')
+@app.route('/blog')
 @login_required
-def contact():
-    return render_template('contact.html')
+def blog():
+    return render_template('blog.html')
 
 @app.route('/post', methods=['POST'])
 @login_required
